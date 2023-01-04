@@ -26,9 +26,15 @@ export const Hero = () => {
                         Gespräch vereinbaren
                     </Link>
                 </div>
-            </div>
-            <div className="flex justify-center pt-24">
-                <Image src="/hero.png" alt="hero" width={1000} height={500} />
+                <div className="flex justify-center pt-24 relative">
+                    <Image
+                        src="/hero.png"
+                        alt="hero"
+                        className="flex-1"
+                        width={1000}
+                        height={1000}
+                    />
+                </div>
             </div>
         </section>
     );
