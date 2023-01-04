@@ -8,12 +8,13 @@ export const Navbar = () => {
             <div className="text-green font-medium text-xl flex items-center">
                 Pipedrive Masters
             </div>
+
             <div
                 className={`items-center fixed h-full top-14 shadow-lg lg:shadow-none bg-white w-72 lg:w-auto lg:static lg:flex lg:flex-row-reverse transform duration-500 ${
                     isOpen ? "block opacity-100 right-0" : "-right-72"
                 }`}
             >
-                <div className="p-4 pb-2 lg:p-0">
+                <div className="p-4 pb-2 lg:p-0 lg:hidden">
                     <Link
                         className="block bg-violet p-3 w-52 lg:w-auto text-sm lg:text-base lg:p-4 rounded-lg text-white"
                         href="/"
@@ -59,6 +60,15 @@ export const Navbar = () => {
                         FAQs
                     </Link>
                 </div>
+            </div>
+            <div className="hidden lg:block p-4 pb-2 lg:p-0">
+                <Link
+                    className="block bg-violet p-3 w-52 lg:w-auto text-sm lg:text-base lg:p-4 rounded-lg text-white"
+                    href="/"
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    Gespräch vereinbaren
+                </Link>
             </div>
 
             <button
