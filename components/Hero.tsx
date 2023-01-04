@@ -33,6 +33,7 @@ export const Hero = () => {
                         className="flex-1"
                         width={1000}
                         height={300}
+                        quality={80}
                     />
                 </div>
             </div>
