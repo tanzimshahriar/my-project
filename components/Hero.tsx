@@ -32,7 +32,7 @@ export const Hero = () => {
                         alt="hero"
                         className="flex-1"
                         width={1000}
-                        height={1000}
+                        height={300}
                     />
                 </div>
             </div>
