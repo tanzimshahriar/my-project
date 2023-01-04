@@ -10,7 +10,7 @@ export const Navbar = () => {
             </div>
 
             <div
-                className={`items-center fixed h-full top-14 shadow-lg lg:shadow-none bg-white w-72 lg:w-auto lg:static lg:flex lg:flex-row-reverse transform duration-500 ${
+                className={`items-center fixed z-10 h-full top-14 shadow-lg lg:shadow-none bg-white w-72 lg:w-auto lg:static lg:flex lg:flex-row-reverse transform duration-500 ${
                     isOpen ? "block opacity-100 right-0" : "-right-72"
                 }`}
             >
